@@ -5,10 +5,20 @@ import SVGComponent from './SVGComponent';
 function App() {
   return (
     <div className="App">
-      <header className="App-header" style={{display: 'flex', flexDirection: 'row'}}>
-        <SVGComponent part="dog" style={{stroke:'#fff'}}/>
-        <SVGComponent part="dog" style={{stroke:'#fff'}} click={() => console.log('override clickhandler')}/>
-        <SVGComponent part="logo"/>
+      <a href="https://github.com/hcientist/SVGComponent/tree/main/src">
+        Source
+      </a>
+      <header
+        className="App-header"
+        style={{ display: "flex", flexDirection: "row" }}
+      >
+        <SVGComponent part="dog" style={{ stroke: "#fff" }} />
+        <SVGComponent
+          part="dog"
+          style={{ stroke: "#fff" }}
+          click={() => console.log("override clickhandler")}
+        />
+        <SVGComponent part="logo" />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
